@@ -1,0 +1,93 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.home{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(education.jpg);
+  background-size: cover;
+  animation-name: zoomOut;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes zoomOut {
+  0%{transform: scale(2.0); opacity: 0.2;}
+  100%{transform: scale(1.0); opacity: 1;}
+}
+
+.heading{
+  font-size:150px;
+  text-align: center;
+  color: white;
+  font-family: 'Arizonia', cursive;
+}
+
+.grid{
+  margin-top: 5vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+  animation-name: slidein;
+  animation-duration: 4s;
+}
+
+@keyframes slidein {
+  0%{left:-100vw; opacity: 0;}
+  100%{left:0vw; opacity: 1;}
+}
+
+.card{
+  width: 20vw;
+  border-radius: 20px;
+  margin-left: 1vw;
+  padding-right: 4vh;
+  margin-right: 1vw;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  font-family: 'Lobster', cursive;
+}
+
+.card:hover{
+  background-color: black;
+}
+
+dt{
+  font-size: 40px;
+}
+
+dd{
+  font-size: 25px;
+}
+
+.button{
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: black;
+  color: white;
+}
+
+.shiftbottom{
+  position: relative;
+  animation: shiftbottom;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes shiftbottom{
+  0%{top:0px;}
+  100%{top:100vh;}
+}
