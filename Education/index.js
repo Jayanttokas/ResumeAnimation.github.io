@@ -4,5 +4,5 @@ function shift(){
   document.getElementById("shift").classList.add("shiftbottom");
   setTimeout(function(){
     window.location.assign("../index.html");
-  },900)
+  },950)
 }
