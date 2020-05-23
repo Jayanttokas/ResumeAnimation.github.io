@@ -31,9 +31,6 @@ body{
 .grid{
   margin-top: 5vh;
   display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items:center;
   position: relative;
   animation-name: slidein;
   animation-duration: 4s;
@@ -46,10 +43,12 @@ body{
 
 .card{
   width: 20vw;
-  border-radius: 20px;
+  height: 50vh;
   margin-left: 1vw;
-  padding-right: 4vh;
   margin-right: 1vw;
+  padding: 1vh;
+  text-align: center;
+  border-radius: 20px;
   border-left: 5px solid white;
   border-right: 5px solid white;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
@@ -61,12 +60,9 @@ body{
 }
 
 dt{
-  font-size: 40px;
+  font-size: 30px;
 }
 
-dd{
-  font-size: 25px;
-}
 
 .button{
   padding: 15px;
@@ -90,4 +86,65 @@ dd{
 @keyframes shiftbottom{
   0%{top:0px;}
   100%{top:100vh;}
+}
+
+@media only screen and (max-width: 1074px) {
+  .heading{
+    font-size:120px;
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  .card{
+    font-size:30px;
+    height: 30vh;
+    width: 20vw;
+    padding: 2px;
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  dt, dd{
+    font-size:20px;
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  dt{
+    font-size:15px;
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .heading{
+    font-size:90px;
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .card{
+    height: 30vh;
+    width: 20vw;
+    padding: 1px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  .heading{
+    font-size:80px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  dt{
+    font-size:12px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  .card{
+    height: 30vh;
+    width: 20vw;
+    padding: 0;
+  }
 }

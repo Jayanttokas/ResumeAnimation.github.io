@@ -37,7 +37,7 @@ body{
 
 .button{
   margin-top: 10vh;
-  padding: 15px;
+  padding: 10px;
   border-radius: 15px;
   font-size: 15px;
   cursor: pointer;
@@ -57,4 +57,34 @@ body{
 @keyframes shifttop {
   0%{bottom:0vh;}
   100%{bottom:100vh;}
+}
+
+@media only screen and (max-width: 1074px) {
+  h1{
+    font-size:30px;
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  h1{
+    font-size:25px;
+  }
+}
+
+@media only screen and (max-width: 572px) {
+  h1{
+    font-size:20px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1{
+    font-size:15px;
+  }
+}
+
+@media only screen and (max-width: 872px) {
+  .button{
+    margin-top:5vh;
+  }
 }
