@@ -52,6 +52,7 @@ body{
   position: relative;
   animation: shifttop;
   animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes shifttop {

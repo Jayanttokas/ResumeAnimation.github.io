@@ -74,6 +74,7 @@ li:hover{
   animation: shiftright;
   animation-duration: 1s;
   animation-timing-function:linear;
+  animation-fill-mode: forwards;
 }
 
 @keyframes shiftright {

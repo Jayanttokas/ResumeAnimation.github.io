@@ -70,6 +70,7 @@ body{
   animation: shiftleft;
   animation-duration: 1s;
   animation-timing-function:linear;
+  animation-fill-mode: forwards;
 }
 
 @keyframes shiftleft {
