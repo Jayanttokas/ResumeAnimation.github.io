@@ -76,16 +76,16 @@ dt{
   color: white;
 }
 
-.shiftbottom{
+.fade{
   position: relative;
-  animation: shiftbottom;
+  animation: fade;
   animation-duration: 1s;
   animation-timing-function: linear;
 }
 
-@keyframes shiftbottom{
-  0%{top:0px;}
-  100%{top:100vh;}
+@keyframes fade{
+  0%{opacity: 1;}
+  100%{opacity: 0;}
 }
 
 @media only screen and (max-width: 1074px) {

@@ -5,4 +5,4 @@ function shift(){
   setTimeout(function(){
     window.location.assign("../index.html");
   },950)
-}
+};

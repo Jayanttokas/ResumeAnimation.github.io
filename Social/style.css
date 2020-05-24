@@ -1,0 +1,169 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.home{
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  animation-name: zoomOut;
+  animation-duration: 1s;
+  font-size: 40px;
+  animation-timing-function: linear;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+@keyframes zoomOut {
+0%{transform: scale(2.0); opacity: 0.2;}
+100%{transform: scale(1.0); opacity: 1;}
+}
+
+.box{
+  width: 25vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.fb{
+  background-color: #3b5998;
+  border: 1px solid black;
+}
+
+.fb:hover{
+  background-image: url(fb.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  animation-name: persp;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  box-shadow: 0px 0px 30px 20px black;
+}
+
+@keyframes persp {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.link{
+  background-color: #2c90c1;
+  border: 1px solid black;
+}
+
+.link:hover{
+  background-image: url(link.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  animation-name: persp;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  box-shadow: 0px 0px 30px 20px black;
+}
+
+.git{
+  background-color: #323131;
+  border: 1px solid black;
+}
+
+.git:hover{
+  background-image: url(git.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  animation-name: persp;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  box-shadow: 0px 0px 30px 20px black;
+}
+
+.insta{
+  background-color: #F56040;
+  border: 1px solid black;
+}
+
+.insta:hover{
+  background-image: url(insta.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  animation-name: persp;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  box-shadow: 0px 0px 30px 20px black;
+}
+
+.button-container{
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.button{
+  height: 100%;
+  width: 100%;
+  font-size: 25px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.button:hover{
+ background-image: linear-gradient(to right, #3b5998, #2c90c1, #323131, #F56040);
+ color: white;
+ box-shadow: 0px 0px 20px 10px black;
+}
+
+.fade{
+  animation-name: fade;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes fade {
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+@media only screen and (max-width: 1280px) {
+  .fb, .link, .insta, .git{
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1026px) {
+  .fb, .link, .insta, .git{
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 854px) {
+  .fb, .link, .insta, .git{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 686px) {
+  .fb, .link, .insta, .git{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 506px) {
+  .fb, .link, .insta, .git{
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .fb:hover, .link:hover, .insta:hover, .git:hover{
+    background-size: contain;
+    background-color: white;
+  }
+}
