@@ -1,0 +1,151 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.home{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(education.jpg);
+  background-size: cover;
+  animation-name: zoomOut;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes zoomOut {
+  0%{transform: scale(2.0); opacity: 0.2;}
+  100%{transform: scale(1.0); opacity: 1;}
+}
+
+.heading{
+  font-size:150px;
+  text-align: center;
+  color: white;
+  font-family: 'Arizonia', cursive;
+}
+
+.grid{
+  margin-top: 5vh;
+  display: flex;
+  position: relative;
+  animation-name: slidein;
+  animation-duration: 4s;
+}
+
+@keyframes slidein {
+  0%{left:-100vw; opacity: 0;}
+  100%{left:0vw; opacity: 1;}
+}
+
+.card{
+  width: 20vw;
+  height: 50vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding: 1vh;
+  text-align: center;
+  border-radius: 20px;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  font-family: 'Lobster', cursive;
+}
+
+.card:hover{
+  background-color: black;
+}
+
+dt{
+  font-size: 30px;
+}
+
+
+.button{
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: black;
+  color: white;
+}
+
+.fade{
+  position: relative;
+  animation: fade;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade{
+  0%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+@media only screen and (max-width: 1074px) {
+  .heading{
+    font-size:120px;
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  .card{
+    font-size:30px;
+    height: 30vh;
+    width: 20vw;
+    padding: 2px;
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  dt, dd{
+    font-size:20px;
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  dt{
+    font-size:15px;
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .heading{
+    font-size:90px;
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .card{
+    height: 30vh;
+    width: 20vw;
+    padding: 1px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  .heading{
+    font-size:80px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  dt{
+    font-size:12px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  .card{
+    height: 30vh;
+    width: 20vw;
+    padding: 0;
+  }
+}

@@ -1,0 +1,161 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.home{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(code.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  animation-name: zoomOut;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes zoomOut {
+  0%{transform: scale(2.0); opacity: 0.2;}
+  100%{transform: scale(1.0); opacity: 1;}
+}
+
+.container{
+  height: 60vh;
+  width: 40vw;
+  color: white;
+  border-radius: 50px;
+  box-shadow: 0px 0px 40px 10px white;
+  font-family: 'Playfair Display', serif;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+}
+
+
+li{
+  font-size:25px;
+  color: white;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+li:hover{
+  width: 90%;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 30px;
+  padding-left:1vw;
+}
+
+.button{
+  padding: 15px;
+  align-self: center;
+  border-radius: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #005A34;
+  color: white;
+}
+
+.backbutton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+.shiftright{
+  position: relative;
+  animation: shiftright;
+  animation-duration: 1s;
+  animation-timing-function:linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shiftright {
+  0%{right:0px;}
+  100%{right:100vw;}
+}
+
+.right{
+  position: relative;
+  animation-name: right;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+.left{
+  position: relative;
+  animation-name: left;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes right {
+  0%{right:100vw; opacity:0; transform: scale(5);}
+  100%{right:0vw; opacity:1; transform: scale(1);}
+}
+
+@keyframes left {
+  0%{left:200vw; opacity:0.0; transform: scale(5);}
+  100%{left:0vw; opacity: 1; transform: scale(1);}
+}
+
+@media only screen and (max-width: 1280px) {
+  li,li:hover{
+    font-size:25px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  li, li:hover{
+    font-size:15px;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  li,li:hover{
+    font-size:10px;
+  }
+}
+
+@media only screen and (max-width: 1046px) {
+  h1{
+    font-size:60px!important;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  h1{
+    font-size:50px!important;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  h1{
+    font-size:40px!important;
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  h1{
+    font-size:30px!important;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .container{
+    height:45vh;
+  }
+}
+
+@media only screen and (max-width: 486px) {
+  .container{
+    height: 50vh;
+  }
+}

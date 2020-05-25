@@ -1,0 +1,160 @@
+body{
+  margin:0px;
+  padding: 0px;
+  background-color: #E6E4DE;
+}
+
+.home{
+  height: 100vh;
+  width: 100%;
+  background-image: url(firstimage.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  animation-name: zoomOut;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes zoomOut {
+  0%{transform: scale(2.0); opacity: 0.2;}
+  100%{transform: scale(1.0); opacity: 1;}
+}
+
+.hello{
+  font-size: 140px;
+  color: #005A34;
+  padding-top: 37vh;
+  padding-left: 15vw;
+  font-family: 'Arizonia', cursive;
+}
+
+.name{
+  font-size: 50px;
+  padding-left: 15vw;
+  font-family: 'Playfair Display', serif;
+}
+
+.content{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  padding: 10px;
+  border-radius: 40px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  width: 85vw;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.button{
+  padding: 15px;
+  border-radius: 15px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #005A34;
+  color: white;
+}
+
+.shiftleft{
+  position: relative;
+  animation: shiftleft;
+  animation-duration: 1s;
+  animation-timing-function:linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shiftleft {
+  0%{left:0px;}
+  100%{left:100vw;}
+}
+
+@media only screen and (max-width: 1074px) {
+  .hello{
+    font-size:100px;
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .hello{
+    font-size:70px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  .hello{
+    font-size:50px;
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  .name{
+    font-size:40px;
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .name{
+    font-size:20px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  .name{
+    font-size:30px;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .box{
+    font-size:15px;
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  .box{
+    font-size:15px;
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .box{
+    font-size:10px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  .box{
+    font-size:8px;
+  }
+}
+
+@media only screen and (max-width: 1074px) {
+  .button{
+    padding: 10px;
+    font-size:15px;
+  }
+}
+
+@media only screen and (max-width: 674px) {
+  .button{
+    padding: 7px;
+    font-size:10px;
+  }
+}
+
+@media only screen and (max-width: 402px) {
+  .button{
+    padding: 5px;
+    font-size:8px;
+  }
+}
