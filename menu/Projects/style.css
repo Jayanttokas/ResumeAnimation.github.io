@@ -62,13 +62,13 @@ body{
 }
 
 @keyframes grow {
-  0%{width:6vw;}
-  100%{width:10vw;}
+  0%{transform: scale(1,1);}
+  100%{transform: scale(1.3,1.1);}
 }
 
 @keyframes normal {
-  0%{width:10vw;}
-  100%{width:6vw;}
+  0%{transform: scale(1.3,1.1);}
+  100%{transform: scale(1,1);}
 }
 
 .zoomOut{

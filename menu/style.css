@@ -35,7 +35,7 @@ body{
 }
 
 .content{
-  margin: 2vh 2vh 2vh 0px;
+  margin: 2vh 2vw 2vh 0px;
   width: 6vw;
   height: 80%;
   border: 1px solid black;
@@ -58,13 +58,13 @@ body{
 }
 
 @keyframes grow {
-  0%{width:6vw;}
-  100%{width:10vw;}
+  0%{transform: scale(1,1); }
+  100%{transform: scale(1.4,1.2); }
 }
 
 @keyframes normal {
-  0%{width:10vw;}
-  100%{width:6vw;}
+  0%{transform: scale(1.4,1.2); }
+  100%{transform: scale(1,1);}
 }
 
 .pos-2{
