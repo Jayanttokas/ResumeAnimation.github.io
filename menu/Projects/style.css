@@ -45,30 +45,13 @@ body{
 }
 
 .hover{
-  animation-name: grow;
-  animation-timing-function: linear;
-  animation-duration: 0.3s;
-  animation-fill-mode: forwards;
-  border: 2px solid white;
-  box-shadow: 0px 10px 25px 2px white;
-  cursor: pointer;
+  transition: width 1s;
+  border: 2px solid black;
+  box-shadow: 0px 10px 25px 2px black;
 }
 
-.hoverOut{
-  animation-name: normal;
-  animation-duration: 0.3s;
-  animation-timing-function: linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes grow {
-  0%{transform: scale(1,1);}
-  100%{transform: scale(1.3,1.1);}
-}
-
-@keyframes normal {
-  0%{transform: scale(1.3,1.1);}
-  100%{transform: scale(1,1);}
+.hover:hover{
+  width:15vw;
 }
 
 .zoomOut{

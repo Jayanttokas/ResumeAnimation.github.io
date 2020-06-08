@@ -8,33 +8,9 @@ function fade(){
 }
 
 
-
-// Add a class while hovering on element
-function hover(id){
-  document.getElementById(id).classList.add("hover");
-  document.getElementById(id).classList.remove("hoverOut");
-}
-
-// Remove class when we hover our from element
-function hoverOut(id){
-  document.getElementById(id).classList.remove("hover");
-  document.getElementById(id).classList.add("hoverOut")
-}
-
 // set the relative position of the content class
 function position(id){
   document.getElementById(id).classList.add("pos");
-}
-
-
-
-// remove the classes of bottom details part
-function aboutOff() {
-  document.getElementById("detailhead").innerHTML = "Web Developer | Graphic Designer";
-  document.getElementById("details").classList.add("fade");
-  document.getElementById("detailhead").classList.remove("zoom");
-  document.getElementById("detailhead").classList.remove("right");
-
 }
 
 //link to get to other pages
