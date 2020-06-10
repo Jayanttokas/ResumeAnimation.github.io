@@ -2,6 +2,7 @@ body{
   margin:0px;
   padding: 0px;
   background-color: black;
+  overflow: hidden;
 }
 
 .home{
@@ -12,20 +13,19 @@ body{
 }
 
 .topbar{
-  display: flex;
   width: 100%;
-  justify-content: center;
-  text-align: center;
   height: 10%;
   color: white;
 }
 
 .topbar-name{
+  text-align: center;
   font-family: 'Arizonia', cursive;
   font-weight: 100;
   letter-spacing: 2px;
   font-size: 40px;
 }
+
 
 .grid{
   margin-top: 10vh;
