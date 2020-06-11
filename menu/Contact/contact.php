@@ -27,9 +27,9 @@
     if($error == ""){
       $headers = "From: '$email'";
       mail("tokasjayant@gmail.com", "Mail from Resume", $message, $headers);
-      echo "mail has been sent";
+      echo "<h1>Mail Sent </h1>";
     } else {
-      echo $error;
+      echo  "<h1>" . $error . "</h1>";
     }
 
   }
